@@ -320,11 +320,13 @@ void RPCConsole::clear()
                 "td.cmd-request { color: #00C0C0; } "
                 "td.cmd-error { color: red; } "
                 "b { color: #00C0C0; } "
+                "x { color: #FFFFFF; } "
                 );
 
     message(CMD_REPLY, (tr("Welcome to the OCP RPC console.") + "<br>" +
                         tr("Use up and down arrows to navigate history, and <b>Ctrl-L</b> to clear screen.") + "<br>" +
-                        tr("Type <b>help</b> for an overview of available commands.")), true);
+                        tr("Type <b>help</b> for an overview of available commands.") + "<br>" +
+                        tr("<b>WARNING: Please be careful with What Commands you Type here, <br>Scammers have activly told Users to Input commands, <br>That lead to the Scammer stealing the Wallet <br>Along with any Coins in them.<br>Do not execute Commands without first knowing how they work or what they do<br>For Maximum Security always Encrypt your Wallet.</b>")), true);
 }
 
 void RPCConsole::message(int category, const QString &message, bool html)
