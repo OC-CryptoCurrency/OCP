@@ -320,7 +320,7 @@ void RPCConsole::clear()
                 "td.cmd-request { color: #00C0C0; } "
                 "td.cmd-error { color: red; } "
                 "b { color: #00C0C0; } "
-                "x { color: #FFFFFF; } "
+                
                 );
 
     message(CMD_REPLY, (tr("Welcome to the OCP RPC console.") + "<br>" +
